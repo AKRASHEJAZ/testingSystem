@@ -17,5 +17,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-
+  fonts:
+    - family: Delius
+      fonts:
+        - asset: assets/fonts/Delius-Regular.ttf
+          weight: 700

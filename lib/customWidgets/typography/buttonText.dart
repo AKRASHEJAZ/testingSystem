@@ -8,7 +8,11 @@ class ButtonText extends StatelessWidget {
   Widget build(BuildContext context) {
     return (Text(
       buttonText,
-      style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+      style: const TextStyle(
+        fontSize: 24,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'delius',
+      ),
     ));
   }
 }

@@ -8,7 +8,11 @@ class Heading extends StatelessWidget {
   Widget build(Object context) {
     return (Text(
       this.text,
-      style: TextStyle(color: AppColorScheme.primary1, fontSize: 48),
+      style: TextStyle(
+        color: AppColorScheme.primary1,
+        fontSize: 48,
+        fontFamily: 'delius',
+      ),
     ));
   }
 }
