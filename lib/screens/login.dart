@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/customWidgets/button_style1.dart';
+import 'package:flutter_application_1/customWidgets/button1.dart';
+import 'package:flutter_application_1/customWidgets/typography/heading1.dart';
+import 'package:flutter_application_1/miscs/colorScheme.dart';
 import '../customWidgets/InputBox.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -9,7 +11,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: AppColorScheme.ascent1,
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -18,15 +20,12 @@ class LoginScreen extends StatelessWidget {
               const Icon(
                 Icons.person_4_rounded,
                 size: 180,
-                color: Colors.white,
+                color: AppColorScheme.primary1,
               ),
               const SizedBox(height: 20),
               const Align(
                 alignment: Alignment.topCenter,
-                child: Text(
-                  "Login",
-                  style: TextStyle(color: Colors.white, fontSize: 48),
-                ),
+                child: Heading("Login"),
               ),
               Inputbox("Name"),
               Inputbox("Father Name"),
@@ -35,6 +34,7 @@ class LoginScreen extends StatelessWidget {
           ),
         ),
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
