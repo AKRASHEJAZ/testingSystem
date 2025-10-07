@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/customWidgets/typography/buttonText.dart';
 import 'package:flutter_application_1/miscs/colorScheme.dart';
 
-class Button1 extends StatelessWidget {
+class Button extends StatelessWidget {
   final String buttonText;
-  const Button1(this.buttonText, {super.key});
+  const Button(this.buttonText, {super.key});
 
   @override
   Widget build(BuildContext context) {

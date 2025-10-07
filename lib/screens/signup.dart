@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/customWidgets/buttons/button.dart';
 import 'package:flutter_application_1/customWidgets/inputs/passwordBox.dart';
 import 'package:flutter_application_1/customWidgets/typography/heading.dart';
 import 'package:flutter_application_1/miscs/colorScheme.dart';
-import '../customWidgets/inputs/InputBox.dart';
+import 'package:flutter_application_1/customWidgets/inputs/InputBox.dart';
+import 'package:flutter_application_1/customWidgets/buttons/button.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,11 +26,12 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: 20),
               const Align(
                 alignment: Alignment.topCenter,
-                child: Heading("Login", AppColorScheme.primary1),
+                child: Heading("SignUp", AppColorScheme.primary1),
               ),
-              Inputbox("Name"),
+              Inputbox("Email"),
               PasswordInputBox("Password"),
-              Button("Login"),
+              PasswordInputBox("ConfirmPassword"),
+              Button("SignUp"),
             ],
           ),
         ),
