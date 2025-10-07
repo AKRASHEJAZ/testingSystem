@@ -4,7 +4,8 @@ import 'package:flutter_application_1/miscs/colorScheme.dart';
 
 class Button extends StatelessWidget {
   final String buttonText;
-  const Button(this.buttonText, {super.key});
+  final VoidCallback? onPressed;
+  const Button(this.buttonText, {super.key, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +13,7 @@ class Button extends StatelessWidget {
       children: [
         const SizedBox(height: 20),
         ElevatedButton(
-          onPressed: () => {},
+          onPressed: onPressed ?? () {},
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColorScheme.ascent2,
             foregroundColor: AppColorScheme.primary2,
